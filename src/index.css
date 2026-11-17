@@ -1,3 +1,50 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@keyframes basket-float {
+    0%,
+    100% {
+        transform: translateY(0) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-8px) rotate(-6deg);
+    }
+}
+
+.animate-basket {
+    animation: basket-float 1.8s ease-in-out infinite;
+}
+
+@keyframes search-sweep {
+    0%,
+    100% {
+        transform: translateX(0) rotate(0deg);
+    }
+    25% {
+        transform: translateX(-2px) rotate(-8deg);
+    }
+    75% {
+        transform: translateX(2px) rotate(8deg);
+    }
+}
+
+.animate-search {
+    animation: search-sweep 2.4s ease-in-out infinite;
+}
+
+@keyframes icon-float {
+    0%,
+    100% {
+        transform: translateY(0) scale(1);
+    }
+    50% {
+        transform: translateY(-10px) scale(1.08);
+    }
+}
+
+.animate-float {
+    animation: icon-float 2s ease-in-out infinite;
+}
+
+.animate-float-delayed {
+    animation: icon-float 2s ease-in-out 0.6s infinite;
+}

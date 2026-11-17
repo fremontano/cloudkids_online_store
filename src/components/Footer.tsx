@@ -2,7 +2,7 @@ export const Footer = () => {
     return (
         <footer className="w-full">
             <div className="grid grid-cols-1 items-stretch bg-[#2D3154] text-center text-white lg:grid-cols-2">
-                <div className="flex w-full flex-col items-center justify-center px-6 py-12 lg:px-12 xl:px-20">
+                <div className="flex w-full flex-col items-center justify-center px-6 py-16 lg:px-12 xl:px-20">
                     <div className="mb-6 flex flex-col items-center gap-2">
                         <span className="inline-block -rotate-1 rounded-sm bg-[#D4E157] px-4 py-1 text-2xl font-extrabold text-[#2D3154] shadow-sm md:text-3xl">
                             Llena tus prendas
@@ -27,7 +27,7 @@ export const Footer = () => {
                     </button>
                 </div>
 
-                <div className="relative hidden min-h-[360px] w-full overflow-hidden bg-[#FCE4EC] lg:block">
+                <div className="relative hidden min-h-90 w-full overflow-hidden bg-[#FCE4EC] lg:block">
                     <img
                         src="https://media.istockphoto.com/id/2096480418/es/foto/grupo-de-ni%C3%B1os-multiculturales-amigos-que-enlazan-brazos-mirando-hacia-abajo-a-la-c%C3%A1mara.jpg?s=612x612&w=0&k=20&c=uhkFo3Z-4lk0XagDN_uUb1VuS0tRRkfgw5TqGkpVTp8="
                         alt="Niños felices vistiendo prendas de colores"
@@ -37,8 +37,8 @@ export const Footer = () => {
                 </div>
             </div>
 
-            <div className="bg-[#222644] px-6 py-6 text-white/80 sm:px-8 lg:px-12 p-5">
-                <p className="text-center text-lg font-medium p-3">
+            <div className="bg-[#222644] px-6 py-8 text-white/80 sm:px-8 lg:px-12">
+                <p className="text-center text-lg font-medium">
                     &copy; {new Date().getFullYear()} CoolKidClods. Todos los derechos reservados.
                 </p>
             </div>
